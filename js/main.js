@@ -72,7 +72,7 @@ function addInnerFooter() {
             <a href="https://www.linkedin.com/in/xander-smith-53879b294/" target="_blank" ref=""noopener noreferrer>
             <img src="\\images\\core\\brand\\InBug-White.png" alt="LinkedIn Link">
             </a>
-            <a href="https://github.com/fearyfiremast" target="_blank" ref=""noopener noreferrer>
+            <a href="mailto:xandersmith@shaw.ca" target="_blank" ref=""noopener noreferrer>
             <img src="\\images\\core\\brand\\pngtree-email-icon-png-image_5065641.jpg" alt="email">
             </a>
         </div>`;
