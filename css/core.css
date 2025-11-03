@@ -121,9 +121,13 @@ footer > div {
     justify-content: center;
 }
 
-footer > div > img {
+footer > div a {
+    max-width: 85px;
+    margin: 0 7vw ;
+}
+
+footer > div img {
     align-self: center;
     flex: 1;
     max-width: 85px;
-    margin: 0 7vw ;
 }

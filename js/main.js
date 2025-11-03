@@ -66,9 +66,15 @@ function addInnerFooter() {
     footerElement.innerHTML = `
         <h2>Get in Touch</h2>
         <div class="feedStructure">
-            <img src="\\images\\core\\brand\\github-mark-white.png" alt="Github link">
+            <a href="https://github.com/fearyfiremast" target="_blank" ref=""noopener noreferrer"> 
+                <img src="\\images\\core\\brand\\github-mark-white.png" alt="Github link">
+            </a>
+            <a href="https://www.linkedin.com/in/xander-smith-53879b294/" target="_blank" ref=""noopener noreferrer>
             <img src="\\images\\core\\brand\\InBug-White.png" alt="LinkedIn Link">
+            </a>
+            <a href="https://github.com/fearyfiremast" target="_blank" ref=""noopener noreferrer>
             <img src="\\images\\core\\brand\\pngtree-email-icon-png-image_5065641.jpg" alt="email">
+            </a>
         </div>`;
     return;
 }
