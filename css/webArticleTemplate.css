@@ -53,9 +53,23 @@ section:nth-child(n+2) {
 }
 
 /* IMAGES */
-.imageBG {
+.figureBG {
     padding: 10px;
-    height: 40vh;
     background-color:rgb(247, 234, 216);
+    width: 100%;
+}
+
+.figureBG > p {
+    font-size: 1.0rem;
+    font-weight: 400;
+}
+
+.figureContainter {
+    overflow: hidden;
+    overflow: hidden;
+}
+
+.figureContainter img {
+    max-height: 50vh;
 }
 
