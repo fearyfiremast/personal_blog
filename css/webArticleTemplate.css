@@ -60,16 +60,18 @@ section:nth-child(n+2) {
 }
 
 .figureBG > p {
+    margin-top: 10px;
     font-size: 1.0rem;
     font-weight: 400;
 }
 
-.figureContainter {
-    overflow: hidden;
+.figureContainer {
+    object-fit: cover;
     overflow: hidden;
 }
 
-.figureContainter img {
+.figureContainer img {
     max-height: 50vh;
+    object-fit: contain;
 }
 
