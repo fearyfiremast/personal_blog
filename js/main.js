@@ -66,16 +66,16 @@ function addInnerFooter() {
     footerElement.innerHTML = `
         <h2>Get in Touch</h2>
         <div class="feedStructure footerStructure ">
-            <a href="https://github.com/fearyfiremast" target="_blank" ref=""noopener noreferrer"> 
+            <a href="https://github.com/fearyfiremast" target="_blank" ref="noopener noreferrer" title="https://github.com/fearyfiremast"> 
                 <img src="\\images\\core\\brand\\github-mark-white.png" alt="Github link">
             </a>
-            <a href="https://www.linkedin.com/in/xander-smith-53879b294/" target="_blank" ref=""noopener noreferrer>
-                <img src="\\images\\core\\brand\\InBug-White.png" alt="LinkedIn Link">
+            <a href="https://www.linkedin.com/in/xander-smith-53879b294/" target="_blank" ref="noopener noreferrer" title="https://www.linkedin.com/in/xander-smith-53879b294/">
+                <img src="\\images\\core\\brand\\InBug-White.png" alt="LinkedIn Link" title="\\images\\core\\brand\\InBug-White.png">
             </a>
-            <a href="mailto:xandersmith@shaw.ca" target="_blank" ref=""noopener noreferrer>
-                <img src="\\images\\core\\brand\\Email_Icon.png" alt="email">
+            <a href="mailto:xandersmith@shaw.ca" target="_blank" ref="noopener noreferrer">
+                <img src="\\images\\core\\brand\\Email_Icon.png" alt="email" title="mailto:xandersmith@shaw.ca">
             </a>
-        </div>`;
+        </div>`
     return;
 }
 
