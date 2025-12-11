@@ -22,13 +22,20 @@ section > h2 {
     margin-bottom: 2rem;
 }
 
+.articleLabels {
+    /* Tinker with value*/
+    font-weight:400;
+}
+
 .articleLabels > p {
     display: inline-block;
     width:fit-content;
+    margin-bottom: 0;
+}
 
-    /* Tinker with value*/
-    font-weight:400;
-    margin-top: 0.3rem;
+.articleLabels > a {
+    display: block;
+    margin-bottom: .5rem;
 }
 
 .articleLabels > p:last-of-type {
