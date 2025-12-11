@@ -127,7 +127,11 @@ footer > div a {
 }
 
 footer > div img {
-    align-self: center;
     flex: 1;
     max-width: 85px;
+}
+
+.footerStructure {
+    display: flex;
+    align-items: center;
 }

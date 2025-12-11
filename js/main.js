@@ -65,7 +65,7 @@ function addInnerFooter() {
     // innerHTML is not secure. Can be injected with scripts.
     footerElement.innerHTML = `
         <h2>Get in Touch</h2>
-        <div class="feedStructure">
+        <div class="feedStructure footerStructure ">
             <a href="https://github.com/fearyfiremast" target="_blank" ref=""noopener noreferrer"> 
                 <img src="\\images\\core\\brand\\github-mark-white.png" alt="Github link">
             </a>
