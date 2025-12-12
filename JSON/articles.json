@@ -1,26 +1,10 @@
 [
     {
-        "name": "My first website",
-        "date": "2025-08-10",
-        "thumbnail": "/images/nature/RockyCove.png",
-        "content": "Hello This is the content for my first website I hope you enjoy it very much. Lol Lmao",
-        "alt": "thumbnail for ",
-        "pagePath": ""
-    },
-    {
         "name": "Portfolio Site Project",
         "date": "2025-08-23",
         "thumbnail": "\\images\\webArticle\\myFirstWebsite\\Default.png",
         "content": "The original history and development stories behind the creation of this webpage.",
         "alt": "The first iteration of the website.",
         "pagePath": "\\pages\\webArticles\\PersonalBlogArticle.html"
-    },
-    {
-        "name": "My third website",
-        "date": "2020-08-10",
-        "thumbnail": "/images/webArticle/myFirstWebsite/Default.png",
-        "content": "",
-        "alt": "test alt lol",
-        "pagePath": ""
     }
 ]
