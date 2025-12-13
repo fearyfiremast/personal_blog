@@ -2,7 +2,7 @@
     {
         "name": "Portfolio Site Project",
         "date": "2025-08-23",
-        "thumbnail": "\\images\\webArticle\\myFirstWebsite\\Default.png",
+        "thumbnail": "/images/webArticle/portfolioArticle/article-sketch-annotated.jpg",
         "content": "The development history behind the creation of this website. Created in my spare time over the summer of 2025 using raw JavaScript, CSS, and HTML to create something that is both dynamic and responsive.",
         "alt": "The first iteration of the website.",
         "pagePath": "\\pages\\webArticles\\PersonalBlogArticle.html"
