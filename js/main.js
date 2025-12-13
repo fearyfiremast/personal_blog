@@ -61,7 +61,6 @@ function appendNav(){
         toAdd.addEventListener("click", (e)=>{
             let navDestination = nameToDest[e.target.textContent];
             navDestination = navDestination.split(", ");
-            console.log(navDestination);
 
             if (window.location.pathname !== navDestination[0]) {
                 // If page does not exist goes to a 404 page
@@ -124,7 +123,6 @@ function addInnerFooter() {
  */
 function _scrollToWithDynamicHeader(destinationCSSName) {
     // Calculating new y position
-    console.log(`val: ${destinationCSSName}`)
     const navBarHeight = document.querySelector(".navList").clientHeight;
     const navCSSItem = document.querySelector(destinationCSSName);
     const YPosCSSNavDest = navCSSItem.getBoundingClientRect().top;
@@ -137,7 +135,6 @@ function _scrollToWithDynamicHeader(destinationCSSName) {
 
     // New position of widow
     const yPos = YPosCSSNavDest + window.pageYOffset - navBarHeight;
-    console.log(`dest y: ${yPos}`)
     window.scrollTo({
         top: yPos,
         behavior: "auto"       
