@@ -133,6 +133,10 @@ footer > div img {
     max-width: 85px;
 }
 
+footer > div img:hover {
+    transform: scale(1.01);
+}
+
 .footerStructure {
     display: flex;
     align-items: center;
