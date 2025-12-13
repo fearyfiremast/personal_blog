@@ -35,8 +35,8 @@ class FeedStatus {
             }
             return response.json();
         })
-        .then((jsonResponse)=> {
-            
+        .then((jsonResponse) => {
+             
             feedHelper.postDataList = [];
             
             // jsonResponse is returned as an object

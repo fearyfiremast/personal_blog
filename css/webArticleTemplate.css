@@ -22,13 +22,20 @@ section > h2 {
     margin-bottom: 2rem;
 }
 
+.articleLabels {
+    /* Tinker with value*/
+    font-weight:400;
+}
+
 .articleLabels > p {
     display: inline-block;
     width:fit-content;
+    margin-bottom: 0;
+}
 
-    /* Tinker with value*/
-    font-weight:400;
-    margin-top: 0.3rem;
+.articleLabels > a {
+    display: block;
+    margin-bottom: .5rem;
 }
 
 .articleLabels > p:last-of-type {
@@ -53,9 +60,25 @@ section:nth-child(n+2) {
 }
 
 /* IMAGES */
-.imageBG {
+.figureBG {
     padding: 10px;
-    height: 40vh;
     background-color:rgb(247, 234, 216);
+    width: 100%;
+}
+
+.figureBG > p {
+    margin-top: 10px;
+    font-size: 1.0rem;
+    font-weight: 400;
+}
+
+.figureContainer {
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.figureContainer img {
+    max-height: 50vh;
+    object-fit: contain;
 }
 

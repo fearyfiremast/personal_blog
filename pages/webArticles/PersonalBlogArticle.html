@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Home</title>
+    <title>Xander Portfolio Site Project</title>
+    <link href="\favicon.ico" rel="icon" size="42x42">
     <link href="\css\core.css" rel="stylesheet" type="text/css">
     <link href="\css\webArticleTemplate.css" rel="stylesheet" type="text/css">
     <script type="module" src="\js\main.js"></script>
@@ -18,12 +19,15 @@
     </nav>
     <main class="feedStructure">
         <section class="pageInfoContainer">
-            <h1 class="pageTitle">ArticleName</h1>
+            <h1 class="pageTitle">Portfolio Site Project</h1>
+            
             
             <div class="articleLabels">
                 <hr>
                 <p>JavaScript, HTML, CSS</p>
-                <p>Front-end</p>
+                <!-- lower p tag must be last-->
+                <p>Front-End</p>
+                <a href="https://github.com/fearyfiremast/fearyfiremast.github.io" target="_blank" ref="noopener noreferrer" title="https://github.com/fearyfiremast/fearyfiremast.github.io">Source-Code</a>
                 <hr>
             </div>
             
@@ -44,12 +48,13 @@
                 <p>
                     The project was created with extension in mind.
                 </p>
-                <div class="imageBG">
-                    <!--<img src="\images\webArticle\portfolioArticle\portfolioPageScreenshot.png"> -->
-                    diagram here
-                </div>  
             </div>
-
+            <div class="figureBG">
+                <div class="figureContainer">
+                    <img src="\images\webArticle\portfolioArticle\homepage-finished-design.png" alt="Mostly finished version of the desktop webpage.">
+                </div>
+                <p> Figure 1: Close to finished version of desktop homepage. Content of Project card is placeholder.</p>
+            </div>  
         </section>
 
          <section>
@@ -92,24 +97,37 @@
                     Each significant component of the website for this iteration of the project was implemented with flexbox displays. Their ubiquity came after I received some feedback on designs that used grids to present parallel information to my main text. Presenting information along a single axis helps it stand out.                
                 </p>
             </div>    
-            <div class="imageBG">
-                    <!--<img src="\"> -->
-                    diagram here
+            <div class="figureBG">
+                <div class="figureContainer">
+                    <img src="\images\webArticle\portfolioArticle\homepage-old-design.png" alt="Original design of website. Takes more advantage of horizontal space than current iteration but is cluttered. Possess a salmon and black and colour scheme. ">
+                </div>
+                <p>
+                    Figure 2: The original look of the homepage. Aside from being unfinished the primary response 
+                    from testers was that it was too boxy and sharp with the boarders around each item. The colour scheme
+                    received mixed feedback with some thinking it was okay and others disliking it.
+                </p>
             </div>
             <div class="pageBody">
                 <p>
-                    Each significant component of the website for this iteration of the project was implemented with flexbox displays. Their ubiquity came after I received some feedback on designs that used grids to present parallel information to my main text. Presenting information along a single axis helps it stand out.                
+                    The feedback on information display was pointed at the image of the cove next to the page title, in addition to the posts section seen at the bottom of figure 2 being less effective at conveying the impact of the information than a solely vertical display. This first round of testing motivated the direction of the website and provided more insight into how a user interacts with a site.
                 </p>
                 <p>
                     The greatest learning experience for conceptualizing how style rules affect elements was creating the navigation bar. Given how flexboxes were presented, I found it intuitive to make the encapsulating ‘ul’ element a flexbox and set the ‘li’ child to share an equal proportion of the available space. This distributes space among the flex items equally along the main axis (in this case horizontally). However, it did not ensure that text inside the flex items were distributed equally along the cross axis because the flex rules only apply to the flex containers immediate children. The solution to the problem was to nest flex containers inside each other and align their content centrally.                
                 </p>
                 <p>
-                    One of the most engaging aspects of the project was designing the layout of each page type, as well as adding subtle effects to the page to enhance its appeal. Before I implemented any design, I always sketched it out first to get a feel for it. Elements would be annotated it with explanations for certain behaviours if it was warranted.                
+                    Before I implemented any design, I always sketched it out first to get a feel for it. How did I want it look? How do I want to present information? What special features could be cool? Elements would be annotated it with explanations for certain behaviours if it was warranted. This process helped me draft the original idea and cement it in my mind.
                 </p>
             </div>
-            <div class="imageBG">
-                    <!--<img src="\"> -->
-                    diagram here
+            <div class="figureBG">
+                <div class="figureContainer">
+                    <img src="\images\webArticle\portfolioArticle\article-sketch-annotated.jpg" alt="Low Fidelity Prototype of a template for articles. Features are annotated."/>
+                </div>
+                <p>
+                    Figure 3: The earliest version of what a default article should like. This was before 
+                    I decided to add tags beneath the title the type of project. Also seen on this draft
+                    is a menu button that, as of writing was skipped so that other more important features
+                    could be implemented first.
+                </p>
             </div>
             <div class="pageBody">
                 <p>
