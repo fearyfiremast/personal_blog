@@ -5,6 +5,10 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: rgb(250, 241, 229);
     min-width: 425px;
@@ -38,7 +42,7 @@ body{
     justify-content: center;
 }
 
-.navList li {
+.navBtn {
     flex: 1;
     display: flex;
     /* Formula only works to align nav to central content when main is centralized
@@ -54,18 +58,16 @@ body{
     align-items: center;
     justify-content: center; 
     background-color:rgb(88, 181, 183);
-}
-
-.navList li:hover {
-    background-color:rgb(77, 162, 164) ;
-}
-
-.navList li a {
     font-size: 1.3rem;
     padding: .4em;
     text-decoration: none;
     color: white;    
     overflow-wrap: break-word;
+}
+
+.navBtn:hover {
+    background-color:rgb(77, 162, 164);
+    cursor: pointer;
 }
 
 /* MAIN */
