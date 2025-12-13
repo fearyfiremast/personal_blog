@@ -144,12 +144,87 @@ function _scrollToWithDynamicHeader(destinationCSSName) {
     });
 }
 
+/**
+ * Checks if layout is stabilized based on the value of the scroll height. When the promise is fulfilled
+ * the layout has stabilized.
+ * 
+ * @returns {Promise}
+ */
+function stableLayout() {
+    return new Promise(resolve => {
+        const interval = 100;
+        const matchThreshold = 2;
+        let matches = 0;
+
+        // scrollheight is used because it considers overflow. Provides better overall picture
+        let prevPageHeight = document.documentElement.scrollHeight;
+
+        function checkStability() {
+            const currentPageHeight = document.documentElement.scrollHeight;
+            if (currentPageHeight === prevPageHeight) {
+                matches += 1;
+            }
+            else {
+                matches = 0;
+                prevPageHeight = currentPageHeight;
+            }
+
+            // Determines if layout is stable
+            if (matches >= matchThreshold) {
+                resolve();
+            }
+            else {
+                // Timeout -> callback recursion
+                setTimeout(checkStability, interval);
+            }
+        }
+
+        checkStability();
+    });
+}
+
+/**
+ * Returns a promise that may contain the target element designated by
+ * destName.
+ * 
+ * @param {string} destName 
+ * @returns {Promise} Destination Element
+ */
+function waitForElement(destName) {
+    return new Promise(resolve => {
+
+        // checks if destName already exists in DOM
+        const destElem = document.querySelector(destName);
+        if (destElem){
+            resolve(destElem);
+        }
+
+        // Mutation Observer. Waits until child with dest name exists
+        // Defines callback
+        const dynamicObserver = new MutationObserver(() => {
+            const destElem = document.querySelector(destName);
+            if (destElem){
+                dynamicObserver.disconnect()
+                resolve(destElem)
+            }
+        });
+
+        // Sets up observer.
+        dynamicObserver.observe(document.body, {
+            subtree: true, childList: true
+        });
+    });
+}
+
 // Majour issue: Currently no guarantee that elements will be loaded when scroll is attempted
-window.addEventListener("DOMContentLoaded", ()=>{
+window.addEventListener("DOMContentLoaded", async ()=>{
     const urlParams = new URLSearchParams(window.location.search);
     const dest = urlParams.get("dest");
     if (dest) {
-        _scrollToWithDynamicHeader(dest)
+        await waitForElement(dest); // Element exists
+        await stableLayout(); // Layout finalized
+        await new Promise(requestAnimationFrame); // Layout painted
+        _scrollToWithDynamicHeader(dest); // scrolls
     }
 });
 
