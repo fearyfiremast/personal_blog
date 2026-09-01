@@ -1,20 +1,37 @@
 import PageTemplate from "../PageTemplate"
+import ProjectCard from "../components/home/ProjectCard"
+import ATFHome from "../components/home/ATFHome"
+import { PROJECTS } from "../constants/Project"
 
 const Home = () => {
+
+  const highlightedArticles: string[] = [
+    'portfolio-site'
+  ]
+
   return (
     <PageTemplate>
-      <div>
-        <h1>Xander Smith</h1>
-        <p>
-          I am a 4th year computer science student at Simon Fraser University and junior developer at Blueprint. I'm passionate about designing easy to extend systems and interactive and vibrant interfaces using JavaScript and CSS. I care deeply about the utility and quality of my projects.
-        </p>
-      </div>
-      <hr/>
-      <div>
-        <h2>
+      {/* Cover */}
+      <ATFHome />
+      <hr className="my-4"/>
+      {/* Project Showcase */}
+      <section>
+        <h2 className="font-semibold text-[30px] text-center mb-4">
           Showcase
         </h2>
-      </div>
+        <div className="flex flex-col">
+          {PROJECTS.filter((item) => highlightedArticles.includes(item.slug)).map((item) => 
+            <ProjectCard 
+              key={item.slug}
+              title={item.title}
+              description={item.description}
+              imgUrl={item.imgUrl}
+              imgAlt={item.imgAlt}
+              slug={item.slug}
+            />
+          )}
+        </div>
+      </section>
     </PageTemplate>
   )
 }
