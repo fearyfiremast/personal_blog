@@ -24,7 +24,7 @@ const NavBar = () => {
 
   return (
     <nav className="sticky top-0 z-20 bg-[#4da2a4]">
-      <div className="bg-[#58b5b7] max-w-284 mx-auto flex">
+      <div className="bg-[#58b5b7] max-w-7xl mx-auto flex">
         {NavButtons.map((item) => {
           return (
             <Link 

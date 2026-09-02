@@ -7,7 +7,7 @@ type PageTemplateProps = {
 
 const PageTemplate = ({children, className}: PageTemplateProps) => {
   return (
-    <div className={`mx-auto max-w-284 ${className}`}>
+    <div className={`mx-auto w-full max-xl:px-4 max-w-7xl ${className}`}>
       {children}
     </div>
   )
