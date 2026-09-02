@@ -1,7 +1,8 @@
 import PageTemplate from "../PageTemplate"
 import ProjectCard from "../components/home/ProjectCard"
-import ATFHome from "../components/home/ATFHome"
 import { PROJECTS } from "../constants/Project"
+import HighlightedProject from "../components/home/HighlightedProject"
+import ATFHome from "../components/home/ATFHome"
 
 const Home = () => {
 
@@ -14,6 +15,7 @@ const Home = () => {
       {/* Cover */}
       <ATFHome />
       <hr className="my-4"/>
+      <HighlightedProject/>
       {/* Project Showcase */}
       <section>
         <h2 className="font-semibold text-[30px] text-center mb-4">
